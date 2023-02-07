@@ -20,7 +20,8 @@ var DNS = Or(
 )
 
 // Define IP as either ipv4 or ipv6
-var IP = Or(Base(ma.P_IP4), Base(ma.P_IP6))
+// var IP = Or(Base(ma.P_IP4), Base(ma.P_IP6))
+var IP = Or(Base(ma.P_IP4), Base(ma.P_IP6), And(Base(ma.P_IP6ZONE), Base(ma.P_IP6)))
 
 // Define TCP as 'tcp' on top of either ipv4 or ipv6, or dns equivalents.
 var TCP = Or(

@@ -1,4 +1,4 @@
-module github.com/multiformats/go-multiaddr-fmt
+module github.com/srene/go-multiaddr-fmt
 
 require github.com/multiformats/go-multiaddr v0.8.0
 
